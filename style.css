@@ -20,17 +20,18 @@ button {
     background-color: #fff100;
     cursor: pointer;
     border: none;
+    border-radius: 10px;
 }
 
 button#new-deck {
-    align-self: flex-start;
-    padding: 5px;
+  padding: 10px;
+  font-size: 17px;
 }
 
 button.draw {
-    font-size: 1.2em;
-    padding: 5px;
-    align-self: stretch;
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
 div.card-slot {
@@ -42,7 +43,7 @@ div.card-slot {
 
 div.card-slot:nth-of-type(1) {
     margin-bottom: 50px;
-}
+} 
 
 img.card {
     width: 100%;
@@ -51,7 +52,10 @@ img.card {
 
 div.top {
     display: flex;
-    align-self: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 div.top > p {
@@ -64,5 +68,9 @@ button.disabled {
 }
 
 h2 {
-    margin: 10px;
+    margin: 5px;
+}
+
+#computer-score {
+  margin-top: 5px;
 }
